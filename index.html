@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto para Challenge ONE</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <main>
+        <img class="logo" src="/assets/LogoAlura.png" alt="Logo Alura">
+        <section class="izq">
+            <h1 class="izq__titulo">Encriptador de Texto</h1>
+            <textarea class="input__text" rows="10" cols="30" id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
+            <div class="info">
+                <img class="info__icono" src="./assets/exclamation.png" alt="Ícono de signo de exclamación">
+                <p class="info__texto">Sólo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="btn__encrypt" onclick="encryptText()">Encriptar</button>
+                <button class="btn__decrypt" onclick="decryptText()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="der__resultado">
+            <textarea class="output__text" rows="10" cols="30" id="outputText" placeholder="Resultado..." hidden></textarea>
+            <button class="btn__copiar" onclick="copyText()">Copiar</button>
+            <div id="hidden">
+                <img class="ocultar__figura" id="hiddenFig" src="assets/Muñeco.png" alt="Imagen de niño observando un diamante con una lupa">
+                <h2 class="ocultar__titulo" id="hiddenTitle">No ingreso ningún texto válido</h2>
+                <h3 class="ocultar__text" id="hiddenText">Ingresa el texto a encriptar o desencriptar</h3>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Raúl Daniel Roberto Cruz en el año 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
